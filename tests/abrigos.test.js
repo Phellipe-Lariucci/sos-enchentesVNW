@@ -3,8 +3,9 @@ const app = require('../src/app');
 
 describe('Abrigos', () => {
   it('deve criar um abrigo', async () => {
+    const nomeAbrigo = `Abrigo teste ${Date.now()}`;
     const response = await request(app).post('/abrigos').send({
-      nome: 'Abrigo teste',
+      nome: nomeAbrigo,
       endereco: 'Rua A',
       cidade: 'Uberaba',
       capacidade_total: 100,
@@ -13,7 +14,7 @@ describe('Abrigos', () => {
     });
     expect(response.statusCode).toBe(201);
     expect(response.body).toHaveProperty('id');
-    expect(response.body.nome).toBe('Abrigo teste');
+    expect(response.body.nome).toBe(nomeAbrigo);
     expect(response.body.endereco).toBe('Rua A');
     expect(response.body.cidade).toBe('Uberaba');
     expect(response.body.capacidade_total).toBe(100);

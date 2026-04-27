@@ -10,8 +10,9 @@ describe('Necessidades', () => {
   let abrigoID;
 
   beforeAll(async () => {
+    const nomeAbrigo = `Abrigo para Necessidades ${Date.now()}`;
     const abrigoResponse = await request(app).post('/abrigos').send({
-      nome: 'Abrigo para Necessidades',
+      nome: nomeAbrigo,
       endereco: 'Rua Teste, 123',
       cidade: 'Uberaba',
       capacidade_total: 100,
