@@ -1,0 +1,108 @@
+{
+  "info": {
+    "_postman_id": "b3ccdac7-8393-4be8-b7fe-f66979240171",
+    "name": "API SOS Enchentes",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52834815"
+  },
+  "item": [
+    {
+      "name": "GET /abrigos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://sos-enchentesvnw-api.onrender.com/abrigos",
+          "protocol": "https",
+          "host": [
+            "sos-enchentesvnw-api",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "abrigos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /necessidades",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"abrigo_id\": 1,\r\n  \"item\": \"Água potável\",\r\n  \"quantidade\": 50,\r\n  \"prioridade\": \"alta\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://sos-enchentesvnw-api.onrender.com/necessidades",
+          "protocol": "https",
+          "host": [
+            "sos-enchentesvnw-api",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "necessidades"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /necessidades",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://sos-enchentesvnw-api.onrender.com/necessidades",
+          "protocol": "https",
+          "host": [
+            "sos-enchentesvnw-api",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "necessidades"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /abrigos",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nome\": \"Abrigo Central\",\r\n  \"endereco\": \"Rua das Flores, 123\",\r\n  \"cidade\": \"Uberaba\",\r\n  \"capacidade_total\": 100,\r\n  \"vagas_disponiveis\": 40,\r\n  \"status\": \"disponivel\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://sos-enchentesvnw-api.onrender.com/abrigos",
+          "protocol": "https",
+          "host": [
+            "sos-enchentesvnw-api",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "abrigos"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

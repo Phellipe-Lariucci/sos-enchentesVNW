@@ -154,7 +154,12 @@ Front-end hospedado na Vercel:
 https://sos-enchentes-vnw.vercel.app
 ```
 
-Back-end hospedado no Render
+Back-end hospedado no Render:
+
+```txt
+https://sos-enchentesvnw-api.onrender.com/abrigos
+https://sos-enchentesvnw-api.onrender.com/necessidades
+```
 
 Repositório no GitHub:
 
