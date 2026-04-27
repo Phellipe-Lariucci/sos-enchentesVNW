@@ -124,12 +124,6 @@ A tabela `necessidades` possui relacionamento com a tabela `abrigos`, permitindo
 
 ---
 
-## 5. Tecnologias Utilizadas
-
-...
-
----
-
 ## 6. Metodologia de Desenvolvimento
 
 O desenvolvimento do back-end foi feito utilizando uma abordagem baseada em **TDD (Test-Driven Development)**.
