@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://sos-enchentesvnw-api.onrender.com';
 
 async function tratarResposta(response) {
   const data = await response.json();
